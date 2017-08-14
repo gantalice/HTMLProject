@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+   <children>
+      <MenuBar fx:id="menu" layoutY="2.0">
+        <menus>
+          <Menu fx:id="opcion" mnemonicParsing="false" text="Opciones">
+            <items>
+              <MenuItem fx:id="ingresar" mnemonicParsing="false" onAction="#ActionIngresar" text="Ingresar Estudiante" />
+                  <MenuItem fx:id="muestra" mnemonicParsing="false" onAction="#ActionMostrar" text="Mostrar Estudiante" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <WebView fx:id="tabla" layoutX="121.0" layoutY="458.0" prefHeight="198.0" prefWidth="476.0" />
+      <Label fx:id="nom" layoutX="41.0" layoutY="62.0" text="Nombre estudiante" />
+      <TextField fx:id="Textnom" layoutX="236.0" layoutY="58.0" />
+      <Label fx:id="id" layoutX="42.0" layoutY="103.0" text="Identificacion" />
+      <Label fx:id="ed" layoutX="41.0" layoutY="139.0" text="edad" />
+      <Label fx:id="tel" layoutX="42.0" layoutY="175.0" text="telefono" />
+      <Label fx:id="cod" layoutX="46.0" layoutY="208.0" text="codigo" />
+      <Label fx:id="carr" layoutX="46.0" layoutY="242.0" text="carrera" />
+      <Label fx:id="sem" layoutX="45.0" layoutY="276.0" text="semestre" />
+      <TextField fx:id="Textid" layoutX="236.0" layoutY="99.0" />
+      <TextField fx:id="Texted" layoutX="236.0" layoutY="135.0" />
+      <TextField fx:id="Texttel" layoutX="236.0" layoutY="171.0" />
+      <TextField fx:id="Textcod" layoutX="236.0" layoutY="204.0" />
+      <TextField fx:id="Textcarr" layoutX="236.0" layoutY="238.0" />
+      <TextField fx:id="Textsem" layoutX="236.0" layoutY="272.0" />
+   </children>
+</AnchorPane>
